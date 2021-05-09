@@ -1,0 +1,6 @@
+.login-wrapper {
+  background-image: url("../../assets/images/landing.jpeg");
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+}

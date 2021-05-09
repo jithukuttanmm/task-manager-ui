@@ -1,0 +1,97 @@
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.dashboard-container .header-container {
+  display: flex;
+  height: 50px;
+  text-align: left;
+  padding-left: 5%;
+  border-bottom: 1px solid grey;
+  flex-grow: 1;
+  align-items: center;
+  box-shadow: 1px 2px #888888;
+}
+.welcome-container {
+  display: flex;
+  flex-grow: 1;
+}
+.dashboard-container .welcome-text {
+  border-left: 1px solid;
+  margin-left: 5px;
+  padding-left: 10px;
+}
+.logout {
+  display: flex;
+  color: red;
+  margin-right: 5%;
+  cursor: pointer;
+  font-size: 13px;
+}
+.data-container {
+  margin-top: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2% 5%;
+}
+.task-container {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+.profile-container {
+  display: flex;
+  flex-direction: column;
+}
+.avatar-styles {
+  border-radius: 50%;
+}
+table {
+  border-collapse: collapse;
+  width: 90%;
+  text-align: left;
+}
+td,
+th {
+  border: 1px solid #ddd;
+  padding: 2px;
+  padding-left: 5px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4caf50;
+  color: white;
+}
+
+input[type="checkbox"] {
+  height: 20px;
+  width: 20px;
+}
+
+button {
+  background-color: #2d8be2; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+input[type="text"],input[type="password"] {
+  padding: 10px 22px;
+}
