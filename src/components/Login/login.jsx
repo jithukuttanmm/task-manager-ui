@@ -73,11 +73,13 @@ class Login extends Component {
             alignItems: "center",
             flexGrow: "1",
             background: "white",
-            minHeight: "34%",
+            minHeight: "35%",
             paddingTop: "2%",
+            paddingBottom: "1%",
             opacity: "0.9",
           }}
         >
+          <h2 style={{ color: "#4267B2" }}>Online Task Manager</h2>
           <div style={{ display: "flex", marginTop: "10px" }}>
             {" "}
             <input
@@ -137,7 +139,12 @@ class Login extends Component {
           {!this.state.showRegsitration && (
             <>
               <div style={{ display: "flex", marginTop: "10px" }}>
-                <button style={{background:'green'}} onClick={this.callLogin}>Login</button>
+                <button
+                  style={{ background: "green" }}
+                  onClick={this.callLogin}
+                >
+                  Login
+                </button>
               </div>
 
               <div
