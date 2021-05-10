@@ -6,22 +6,27 @@ const API_DOMAIN =
 
 axios.interceptors.request.use(
   function (request) {
+    document.getElementById("loader-div").style.display = "block";
     request["url"] = API_DOMAIN + request["url"];
     request.headers["Authorization"] = sessionStorage.getItem("token") || "";
     return request;
   },
   function (error) {
+    document.getElementById("loader-div").style.display = "none";
     return Promise.reject(error);
   }
 );
 
 axios.interceptors.response.use(
   function (response) {
+    document.getElementById("loader-div").style.display = "none";
     return response;
   },
   function (error) {
-    // if (error.response.status === 401); // login failure go to login page
-    // window.location = "/";
+    document.getElementById("loader-div").style.display = "none";
+    if (error.response && error.response.status === 401)
+      // login failure go to login page
+      window.location = "/";
     return Promise.reject(error);
   }
 );

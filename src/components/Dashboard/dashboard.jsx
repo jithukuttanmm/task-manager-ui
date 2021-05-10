@@ -62,9 +62,14 @@ class Dashboard extends Component {
               </i>
             )}
           </div>
-          <div className="logout" onClick={this.logout}>
-            <i id="single">Logout</i>&nbsp; | &nbsp;
-            <i id="multiple">Logout all devices</i>
+          <div className="logout">
+            <i onClick={this.logout} id="single">
+              Logout
+            </i>
+            &nbsp; | &nbsp;
+            <i onClick={this.logout} id="multiple">
+              Logout all devices
+            </i>
           </div>
         </div>
         <div className="data-container">
@@ -240,9 +245,8 @@ class Dashboard extends Component {
                     fontWeight: "bold",
                     cursor: "pointer",
                   }}
-                  onClick={this.deleteAccount}
                 >
-                  <p>Delete Account</p>
+                  <p onClick={this.deleteAccount}>Delete Account</p>
                 </div>
               </div>
             </div>

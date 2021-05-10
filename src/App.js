@@ -10,6 +10,9 @@ import ManagePassword from "./components/Dashboard/managePassword";
 function App() {
   return (
     <Provider store={store}>
+      <div id="loader-div">
+        <div id="loader"></div>
+      </div>
       <Router>
         <div className="App">
           <Switch>
