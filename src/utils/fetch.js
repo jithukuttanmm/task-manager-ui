@@ -6,7 +6,7 @@ const API_DOMAIN =
 
 axios.interceptors.request.use(
   function (request) {
-    document.getElementById("loader-div").style.display = "block";
+    document.getElementById("loader-div").style.display = "flex";
     request["url"] = API_DOMAIN + request["url"];
     request.headers["Authorization"] = sessionStorage.getItem("token") || "";
     return request;

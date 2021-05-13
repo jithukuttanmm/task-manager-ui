@@ -46,10 +46,12 @@
 }
 .avatar-styles {
   border-radius: 50%;
+  width: inherit;
+  height: inherit;
 }
 table {
   border-collapse: collapse;
-  width: 90%;
+  width: 100%;
   text-align: left;
 }
 td,
@@ -92,6 +94,13 @@ button {
   border-radius: 0.4rem;
   cursor: pointer;
 }
-input[type="text"],input[type="password"] {
+input[type="text"],
+input[type="password"] {
   padding: 10px 22px;
+}
+@media only screen and (max-width: 600px) {
+  .profile-container {
+    flex-grow: 1;
+    margin-top: 2%;
+  }
 }
